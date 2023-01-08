@@ -1,9 +1,6 @@
 package io.springbatch.springbatchlecture.batch.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
@@ -14,4 +11,11 @@ public class ProductVO {
     private int price;
     private String type;
 
+    @Builder
+    public ProductVO(Long id, String name, int price, String type) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.type = type;
+    }
 }
