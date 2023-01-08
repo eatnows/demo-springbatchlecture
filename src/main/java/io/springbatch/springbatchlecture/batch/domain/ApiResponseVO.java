@@ -1,9 +1,10 @@
 package io.springbatch.springbatchlecture.batch.domain;
 
 import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
 
-@Getter
+@Data
 public class ApiResponseVO {
 
     private int status;
